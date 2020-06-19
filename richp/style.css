@@ -14,7 +14,7 @@ body {
 .form {
     position: relative;
     z-index: 1;
-    background-color: rgba(7, 40, 195, 08);
+    background-color: #6a197d;
     max-width: 360px;
     margin: 0 auto 100px;
     padding: 45px;
