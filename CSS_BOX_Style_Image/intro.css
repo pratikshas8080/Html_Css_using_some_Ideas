@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    top: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: #003049;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+    width: 400px;
+    height: 400px;
+    background: white;
+    transform: scale(1) rotate(180deg);
+    animation-name: turn;
+    animation-duration: 1s;
+    animation-delay: 5.2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes turn {
+    0% {
+        transform: scale(1) rotate(180deg);
+    }
+    50% {
+        transform: scale(1) rotate(1440deg);
+    }
+    100% {
+        transform: scale(1) rotate(-360deg);
+        box-shadow: 0px 20px 100px rgba(0, 0, 0, .5);
+    }
+}
+
+#div-22,
+#div-25,
+#div-27,
+#div-28,
+#div-29,
+#div-32,
+#div-35,
+#div-38,
+#div-42,
+#div-45,
+#div-48,
+#div-52,
+#div-53,
+#div-54,
+#div-55,
+#div-58,
+#div-62,
+#div-65,
+#div-68,
+#div-72,
+#div-75,
+#div-78,
+#div-82,
+#div-85,
+#div-87,
+#div-88,
+#div-89,
+#div-0,
+#div-1,
+#div-2,
+#div-3,
+#div-4,
+#div-5,
+#div-6,
+#div-7,
+#div-8,
+#div-9 {
+    width: 40px;
+    height: 40px;
+    background: #003049;
+}
+
+#div-0::before {
+    content: '';
+    position: absolute;
+    bottom: auto;
+    background-color: #b3dfa1;
+    background-image: linear-gradient(315deg, #b3dfa1 0%, #f0e703 74%);
+    width: 40px;
+    animation-name: fill1;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes fill1 {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 40px;
+    }
+}
+
+#div-1::before {
+    content: '';
+    position: absolute;
+    bottom: auto;
+    background-color: #b3dfa1;
+    background-image: linear-gradient(315deg, #b3dfa1 0%, #f0e703 74%);
+    width: 40px;
+    animation-name: fill1;
+    animation-duration: .5s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes fill1 {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 40px;
+    }
+}
+
+#div-22::before,
+#div-25::before,
+#div-27::before,
+#div-28::before,
+#div-29::before,
+#div-2::before {
+    content: '';
+    position: absolute;
+    bottom: auto;
+    background-color: #b3dfa1;
+    background-image: linear-gradient(315deg, #b3dfa1 0%, #f0e703 74%);
+    width: 40px;
+    animation-name: fill1;
+    animation-duration: .5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+#div-22::before,
+#div-25::before,
+#div-27::before,
+#div-28::before,
+#div-29::before {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .5);
+}
+
+@keyframes fill1 {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 40px;
+    }
+}
+
+#div-32::before,
+#div-35::before,
+#div-38::before,
+#div-3::before {
+    content: '';
+    position: absolute;
+    bottom: auto;
+    background-color: #b3dfa1;
+    background-image: linear-gradient(315deg, #b3dfa1 0%, #f0e703 74%);
+    width: 40px;
+    animation-name: fill1;
+    animation-duration: .5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+#div-32::before,
+#div-35::before,
+#div-38::before {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .5);
+}
+
+@keyframes fill1 {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 40px;
+    }
+}
+
+#div-42::before,
+#div-45::before,
+#div-48::before,
+#div-4::before {
+    content: '';
+    position: absolute;
+    bottom: auto;
+    background-color: #b3dfa1;
+    background-image: linear-gradient(315deg, #b3dfa1 0%, #f0e703 74%);
+    width: 40px;
+    animation-name: fill1;
+    animation-duration: .5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+#div-42::before,
+#div-45::before,
+#div-48::before {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .5);
+}
+
+@keyframes fill1 {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 40px;
+    }
+}
+
+#div-52::before,
+#div-53::before,
+#div-54::before,
+#div-55::before,
+#div-58::before,
+#div-5::before {
+    content: '';
+    position: absolute;
+    bottom: auto;
+    background-color: #b3dfa1;
+    background-image: linear-gradient(315deg, #b3dfa1 0%, #f0e703 74%);
+    width: 40px;
+    animation-name: fill1;
+    animation-duration: .5s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+#div-52::before,
+#div-53::before,
+#div-54::before,
+#div-55::before,
+#div-58::before {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .5);
+}
+
+@keyframes fill1 {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 40px;
+    }
+}
+
+#div-62::before,
+#div-65::before,
+#div-68::before,
+#div-6::before {
+    content: '';
+    position: absolute;
+    bottom: auto;
+    background-color: #b3dfa1;
+    background-image: linear-gradient(315deg, #b3dfa1 0%, #f0e703 74%);
+    width: 40px;
+    animation-name: fill1;
+    animation-duration: .5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+#div-62::before,
+#div-65::before,
+#div-68::before {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .5);
+}
+
+@keyframes fill1 {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 40px;
+    }
+}
+
+#div-72::before,
+#div-75::before,
+#div-78::before,
+#div-7::before {
+    content: '';
+    position: absolute;
+    bottom: auto;
+    background-color: #b3dfa1;
+    background-image: linear-gradient(315deg, #b3dfa1 0%, #f0e703 74%);
+    width: 40px;
+    animation-name: fill1;
+    animation-duration: .5s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+#div-72::before,
+#div-75::before,
+#div-78::before {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .5);
+}
+
+@keyframes fill1 {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 40px;
+    }
+}
+
+#div-82::before,
+#div-85::before,
+#div-87::before,
+#div-88::before,
+#div-89::before,
+#div-8::before {
+    content: '';
+    position: absolute;
+    bottom: auto;
+    background-color: #b3dfa1;
+    background-image: linear-gradient(315deg, #b3dfa1 0%, #f0e703 74%);
+    width: 40px;
+    animation-name: fill1;
+    animation-duration: .5s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+#div-82::before,
+#div-85::before,
+#div-87::before,
+#div-88::before,
+#div-89::before {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .5);
+}
+
+@keyframes fill1 {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 40px;
+    }
+}
+
+#div-9::before {
+    content: '';
+    position: absolute;
+    bottom: auto;
+    background-color: #b3dfa1;
+    background-image: linear-gradient(315deg, #b3dfa1 0%, #f0e703 74%);
+    width: 40px;
+    animation-name: fill1;
+    animation-duration: .5s;
+    animation-delay: 4.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes fill1 {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 40px;
+    }
+}
+
+@media (max-width: 720px) {
+    #container {
+        transform: scale(.9);
+    }
+}
