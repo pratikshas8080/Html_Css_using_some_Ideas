@@ -1,0 +1,68 @@
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    background-color: beige;
+    font-family: Verdana, cursive;
+    color: #04045a;
+    text-align: center;
+}
+
+#header {
+    font-family: 'Annie Use Your Telescope', cursive;
+}
+
+#legend {
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 120%;
+    position: sticky;
+    top: 20px;
+    background-color: rgba(1, 1, 1, .5);
+    color: white;
+    padding: 5px;
+    margin: 2px;
+}
+
+#legend a {
+    color: white;
+    padding: 5px;
+}
+
+#everything {
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(100px, 1fr));
+}
+
+#everything div {
+    display: grid;
+    place-items: center;
+}
+
+div.description {
+    font-size: 80%;
+}
+
+.icon {
+    font-size: 2rem;
+    font-family: "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+div.separator {
+    background-color: rgba(1, 1, 1, .8);
+    color: navy;
+    background-color: yellow;
+    display: grid;
+    place-items: center;
+    border: 1px solid navy;
+}
+
+div.separator a {
+    padding: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        scroll-behavior: auto;
+    }
+}
