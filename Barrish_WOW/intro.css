@@ -1,0 +1,58 @@
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body>canvas {
+    border: 1px solid black;
+    background-color: transparent;
+    z-index: 10;
+}
+
+body>#sky-top {
+    height: 100% !important;
+    width: 100% !important;
+    background-color: rgb(46, 46, 46);
+    position: absolute;
+    z-index: 1;
+    animation: lightning 20s ease-in-out infinite;
+}
+
+@keyframes lightning {
+    0% {
+        background-color: rgb(46, 46, 46);
+    }
+    6.25% {
+        background-color: rgb(46, 46, 46);
+    }
+    8% {
+        background-color: rgb(255, 255, 255);
+    }
+    9% {
+        background-color: rgb(46, 46, 46);
+    }
+    11% {
+        background-color: rgb(255, 255, 255);
+    }
+    30% {
+        background-color: rgb(46, 46, 46);
+    }
+    100% {
+        background-color: rgb(46, 46, 46);
+    }
+}
+
+body>#sky-bottom {
+    height: 100% !important;
+    width: 100% !important;
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgb(120, 140, 155));
+}

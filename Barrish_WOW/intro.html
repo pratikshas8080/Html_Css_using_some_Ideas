@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Barrish
+    </title>
+    <link rel="stylesheet" href="intro.css"> </head>
+
+<body>
+    <div id="sky-top"></div>
+    <div id="sky-bottom"></div>
+    <canvas id="canvas"></canvas>
+
+    <!-- canvas fullscreen -->
+    <script>
+        const height = document.body.offsetHeight;
+        const width = document.body.offsetWidth;
+        const cvs = document.getElementById('canvas');
+        cvs.setAttribute("height", height);
+        cvs.setAttribute("width", width);
+    </script>
+    <script src="intro.js"></script>
+</body>
+
+</html>
