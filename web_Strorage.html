@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStorage Practice</title>
+</head>
+
+<!--CSS-->
+<style>
+    p {
+        font-size: 24px;
+        color: blue;
+    }
+    
+    div {
+        font: 36px;
+        columns: red;
+    }
+    
+    #b1 {
+        width: 100px;
+        height: 40px;
+        position: absolute;
+        left: 100px;
+        top: 200px;
+    }
+    
+    #b2 {
+        width: 100px;
+        height: 40px;
+        position: absolute;
+        left: 100px;
+        top: 250px;
+    }
+    
+    #b3 {
+        width: 100px;
+        height: 40px;
+        position: absolute;
+        left: 100px;
+        top: 320px;
+    }
+</style>
+
+
+<!---Body Tag-->
+
+<body>
+    <!---Script Code-->
+    <script>
+        function setName() {
+            if (typeof(Storage) !== "undefined") {
+                localStorage.setItem("firstname", "Pratiksha");
+            } else {
+                document.getElementById("result").innerHTML = "Not Supported";
+            }
+
+        }
+
+        function displayName() {
+            document.getElementById("result").innerHTML = localStorage.getItem("firstName");
+        }
+
+        function removeName() {
+            localStorage.removeItem("firstName");
+        }
+    </script>
+
+    <!--HTML Code-->
+    <h2>WebStorage Practice</h2>
+    <div id="result"> </div>
+    <p> Click For This</p>
+    <button id="b1" type="button" onclick="setName()"> Set Name</button>
+
+    <button id="b2" type="button" onclick="displayName()"> display Name</button>
+
+    <button id="b3" type="button" onclick="removeName()"> Remove Name</button>
+</body>
+
+</html>
