@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+            webstorge demo objective - 2
+        </title>
+    </head>
+    <body>
+        <script>
+            var imgElem;
+            if(!localStorage.getItem('image')){
+                populatStrorage();
+            }else{
+                setStyles();
+            }
+            function populatStrorage(){
+                localStorage.setItem('image',document.getElementById('image').value);
+                setStyles();
+            }
+            function setStyles(){
+                imgElem=document.querySelector('img');
+                var currentImage=localStorage.getItem('image');
+                imgElem.setAttribute('src',currentImage);
+                document.getElementById('demo').innerHTML="selected image: "+currentImage;
+
+                document.getElementById('image').value=currentImage;
+            }
+            function remove(){
+                localStorage.removeItem('image');
+            }
+        </script>
+        <h2>webstorge demo objective - 2 using image</h2>
+        <div>
+            <form>
+                <div>
+                    <select id="image" onchange="populatStrorage()" >
+                        <option value="https://images.unsplash.com/photo-1534575180408-b7d7c0136ee8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">Fish</option>
+                        <option value="https://images.unsplash.com/photo-1521217155737-0d5632e9813f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">tortoise </option>
+                        <option value="https://images.unsplash.com/photo-1515825369633-ca5a241eced4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">crocodile</option>
+                    </select>
+                </div>
+        <div>
+        <button id="display" type="button" onclick="setStyles()">Dispaly image</button>
+        <button id="remove" type="button" onclick="remove()">remove image</button>
+        </div>
+            </form>
+            <p id="demo"></p>
+            <img>
+        </div>
+    </body>
+</html>
