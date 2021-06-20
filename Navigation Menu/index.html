@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="inner-width">
+      <h1>Menu</h1>
+      <div class="menu-icon">
+        <i class="fas fa-align-right"></i>
+      </div>
+    </div>
+  </header>
+
+  <div class="navigation-menu">
+    <nav>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Works</a></li>
+      <li><a href="#">Contact</a></li>
+    </nav>
+  </div>
+
+  <p>
+
+    Do you suffer from Parkinson's Disease or Brain Tumor?
+    <br>
+    <br>
+
+    Now Consult Super Specialists
+    <br>
+    <br>
+
+    Neurosurgery is surgery of the nervous system.
+    <br>
+    It is the medical specialty concerned with the diagnosis and treatment of of patients with injury to, or
+    diseases/disorders of the brain, spinal cord and spinal column, and peripheral nerves within all parts of the body.
+    <br>
+    <br>
+
+    What do neurosurgeons do?
+    <br>
+    Neurosurgeons are trained to treat people with trauma to the brain and spine, aneurysms, blocked arteries, chronic
+    low-back pain, birth defects, tumors in the brain and spinal cord, and peripheral nerve issues.
+  </p>
+
+  <script>
+    $(".menu-icon").click(function () {
+      $(this).toggleClass("active");
+      $(".navigation-menu").toggleClass("active");
+      $(".menu-icon i").toggleClass("fa-times");
+    });
+  </script>
+</body>
+
+</html>
